@@ -6,26 +6,23 @@
         xmlns:local="clr-namespace:pr_24"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <DockPanel>
+	<DockPanel>
+		<Border Background="AliceBlue" Height="60" DockPanel.Dock="Top">
+			<Image Source="/Images/books.png"
+           Stretch="UniformToFill"
+           HorizontalAlignment="Center"
+           VerticalAlignment="Center"/>
+		</Border>
 
-        <!-- Верхняя панель -->
-        <StackPanel Orientation="Horizontal" Background="AliceBlue"
-                    Height="60" DockPanel.Dock="Top">
-            <TextBlock Text="Библиотека" FontSize="26"
-                       FontWeight="Bold" Margin="15,10,0,0"/>
-        </StackPanel>
-
-        <!-- Левое меню -->
-        <StackPanel Background="Silver" Width="150" DockPanel.Dock="Left">
-            <Button Content="Книги" Margin="8" BorderThickness="0" Background="Silver" Height="30"
+		<StackPanel Background="Silver" Width="150" DockPanel.Dock="Left">
+			<Button Content=" 📚 Книги" Margin="8" BorderThickness="0" Background="Silver" Height="30"
                     Click="ShowBooks_Click"/>
-            <Button Content="О программе" Margin="5" BorderThickness="0" Background="Silver" Height="30"
+			<Button Content=" 📃О программе" Margin="5" BorderThickness="0" Background="Silver" Height="30"
                     Click="ShowAbout_Click"/>
-        </StackPanel>
+		</StackPanel>
 
-        <!-- Контент -->
-        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"
+		<Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"
                Background = "Ivory"/>
-    </DockPanel>
+	</DockPanel>
 </Window>
 

@@ -26,12 +26,11 @@
     <StackPanel Margin="15">
 
         <TextBlock Text="Название:"/>
-        <TextBox x:Name="txtTitle" Margin="0,3,0,10"
+		<TextBox x:Name="txtTitle" Margin="0,3,0,10"
                  Validation.ErrorTemplate="{StaticResource ErrorTemplate}"
                  Text="{Binding Title, UpdateSourceTrigger=PropertyChanged,
                                 ValidatesOnDataErrors=True}"/>
-
-        <TextBlock Text="Автор:"/>
+		<TextBlock Text="Автор:"/>
         <TextBox x:Name="txtAuthor" Margin="0,3,0,10"
                  Text="{Binding Author, UpdateSourceTrigger=PropertyChanged}"/>
 

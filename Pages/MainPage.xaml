@@ -14,18 +14,21 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Библиотека" FontSize="26" FontWeight="Bold"
-                   Margin="0,0,0,10"/>
+		<StackPanel Margin="0,0,0,15">
+			<TextBlock Text="Библиотека"
+                   FontSize="26" FontWeight="Bold"
+                   Foreground="Black"/>
+			<TextBlock Text="Каталог книг вашей коллекции"
+                   FontSize="14"
+                   Foreground="Gray"
+                   Margin="0,2,0,0"/>
+		</StackPanel>
 
-        <StackPanel Grid.Row="1">
+		<StackPanel Grid.Row="1">
             <StackPanel Orientation="Horizontal" Margin="0,0,0,10">
-                <Button Content="Добавить книгу" Width="130" Height="30" Margin="0,0,10,0" Background="LightGreen"
-                        Click="Add_Click"/>
-                <Button Content="Редактировать" Width="130" Height="30" Margin="0,0,10,0" Background="LightYellow"
-                        Click="Edit_Click"/>
-                <Button Content="Удалить" Width="100" Height="30" Background= "OrangeRed"
-                        
-                        Click="Delete_Click"/>
+                <Button Content="➕ Добавить книгу" Width="130" Height="30" Margin="0,0,10,0" Background="LightGreen" Click="Add_Click"/>
+                <Button Content="✏ Редактировать" Width="130" Height="30" Margin="0,0,10,0" Background="LightYellow" Click="Edit_Click"/>
+                <Button Content="🗑 Удалить" Width="100" Height="30" Background= "OrangeRed" Click="Delete_Click"/>
             </StackPanel>
 
             <DataGrid x:Name="gridBooks" AutoGenerateColumns="False"

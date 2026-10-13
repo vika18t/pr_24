@@ -11,7 +11,7 @@ namespace pr_24
     {
         public string Title { get; set; } = "";
         public string Author { get; set; } = "";
-        public int Year { get; set; } = 2020;
+        public int Year { get; set; } = 0;
 
         public string Error => null;
 

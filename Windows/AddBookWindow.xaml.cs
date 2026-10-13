@@ -27,13 +27,11 @@ namespace pr_24.Windows
         private void Add_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = true;
-            Close();
         }
 
         private void Cancel_Click(object sender, RoutedEventArgs e)
         {
             DialogResult = false;
-            Close();
         }
     }
 }
