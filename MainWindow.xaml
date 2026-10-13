@@ -1,0 +1,31 @@
+﻿<Window x:Class="pr_24.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pr_24"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <DockPanel>
+
+        <!-- Верхняя панель -->
+        <StackPanel Orientation="Horizontal" Background="AliceBlue"
+                    Height="60" DockPanel.Dock="Top">
+            <TextBlock Text="Библиотека" FontSize="26"
+                       FontWeight="Bold" Margin="15,10,0,0"/>
+        </StackPanel>
+
+        <!-- Левое меню -->
+        <StackPanel Background="Silver" Width="150" DockPanel.Dock="Left">
+            <Button Content="Книги" Margin="8" BorderThickness="0" Background="Silver" Height="30"
+                    Click="ShowBooks_Click"/>
+            <Button Content="О программе" Margin="5" BorderThickness="0" Background="Silver" Height="30"
+                    Click="ShowAbout_Click"/>
+        </StackPanel>
+
+        <!-- Контент -->
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden"
+               Background = "Ivory"/>
+    </DockPanel>
+</Window>
+
